@@ -2,6 +2,7 @@
 package romanNumerals
 
 var Numerals = map[int]string{
+	11: "XI",
 	10: "X",
 	9:  "IX",
 	8:  "VIII",

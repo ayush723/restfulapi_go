@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/restfulapi_go/romanNumerals"
+	"github.com/ayush723/restfulapi_go/Chapter1/romanNumerals"
 )
 
 func main() {
@@ -19,7 +19,7 @@ func main() {
 		// If request is GET with correct syntax
 		if urlPathElements[1] == "roman_number" {
 			number, _ := strconv.Atoi(strings.TrimSpace(urlPathElements[2]))
-			if number == 0 || number > 10 {
+			if number == 0 || number > 11 {
 				// If resource is not in the list, send Not Found status
 				w.WriteHeader(http.StatusNotFound)
 				w.Write([]byte("404 - Not Found"))
